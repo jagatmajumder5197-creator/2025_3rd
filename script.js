@@ -1,5 +1,6 @@
 const WEB_APP_URL =
-  'https://script.google.com/macros/s/AKfycbyOnxQqelRC93Xmx61AHsmX3XsB6u3qKK_LtY0miKigHQGwH2fz75Ho1hxy8YoYYsYWQQ/exec';
+'https://script.google.com/macros/s/AKfycbwLOxDByXwi6rwLuRqcs5PrlB4_Rcy0nS5UjALx9JqkAgiN6OEGL6kzdXCY0BA66-5X/exec';
+
 
 let allStudents = [];
 
@@ -169,7 +170,6 @@ function getFmBreakdown(fm, writtenVal, studentClass, subject) {
       return { written: '', oral: 50 };
     }
 
-    const hindiClasses = ['UKG_A', 'UKG_B', 'I (A)', 'I (B)'];
     const isHindi = (subject === 'HN' || subject === 'HINDI');
 
     if (hindiClasses.includes(studentClass) && isHindi) {
